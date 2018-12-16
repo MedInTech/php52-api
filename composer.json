@@ -1,0 +1,34 @@
+{
+  "name": "arth/php52-api",
+  "description": "php5.2 http api implementation",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Alexander Deider",
+      "email": "arth.inbox@gmail.com"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "src/"
+    ]
+  },
+  "autoload-dev": {
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5"
+  },
+  "require": {
+    "arth/php52-autoload": "dev-master",
+    "arth/php52-ioc": "dev-master",
+    "arth/php52-log": "dev-master",
+    "arth/php52-structure": "dev-master"
+  },
+  "extra": {
+    "autoload": {
+      "class": "MedInTech_Autoload_Snake",
+      "path": "/src",
+      "prefix": "MedInTech_Api"
+    }
+  }
+}
